@@ -17,8 +17,14 @@ class ViewController: UIViewController {
     
 //    
 
-    @IBAction func didTapOpen(_ sender: Any) {
+    @IBAction func didTapDashboard(_ sender: Any) {
         let vc = DashboardFactory().getInitVC()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func didTapPeople(_ sender: Any) {
+        let vc = PeopleFactory().getInitVC()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }

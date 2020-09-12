@@ -25,6 +25,8 @@
 		9C69D38B2509AA1A00143B3B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */; };
 		9C69D38D2509D0C800143B3B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38C2509D0C800143B3B /* Entities.swift */; };
 		9C69D39F250AC8B200143B3B /* INXAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D39E250AC8B200143B3B /* INXAnalytics.swift */; };
+		9CBF374B250D7D6D00DF8996 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF3749250D7D6D00DF8996 /* PersonTableViewCell.swift */; };
+		9CBF374C250D7D6D00DF8996 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF374A250D7D6D00DF8996 /* PersonTableViewCell.xib */; };
 		9CDDEC03250D631300E1FB91 /* PeopleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFC250D631300E1FB91 /* PeopleFactory.swift */; };
 		9CDDEC04250D631300E1FB91 /* PeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFD250D631300E1FB91 /* PeoplePresenter.swift */; };
 		9CDDEC05250D631300E1FB91 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */; };
@@ -58,6 +60,8 @@
 		9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		9C69D38C2509D0C800143B3B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		9C69D39E250AC8B200143B3B /* INXAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INXAnalytics.swift; sourceTree = "<group>"; };
+		9CBF3749250D7D6D00DF8996 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		9CBF374A250D7D6D00DF8996 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		9CDDEBFC250D631300E1FB91 /* PeopleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFactory.swift; sourceTree = "<group>"; };
 		9CDDEBFD250D631300E1FB91 /* PeoplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePresenter.swift; sourceTree = "<group>"; };
 		9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,15 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		9CBF3748250D7D4900DF8996 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9CBF3749250D7D6D00DF8996 /* PersonTableViewCell.swift */,
+				9CBF374A250D7D6D00DF8996 /* PersonTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9CDDEBFB250D62F200E1FB91 /* People */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +227,7 @@
 		9CDDEC0C250D633000E1FB91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9CBF3748250D7D4900DF8996 /* Cells */,
 				9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */,
 				9CDDEC00250D631300E1FB91 /* PeopleViewController.xib */,
 			);
@@ -300,6 +314,7 @@
 				9C5306D225095EDE00CBFE32 /* LaunchScreen.storyboard in Resources */,
 				9CDDEC07250D631300E1FB91 /* PeopleViewController.xib in Resources */,
 				9C5306CF25095EDE00CBFE32 /* Assets.xcassets in Resources */,
+				9CBF374C250D7D6D00DF8996 /* PersonTableViewCell.xib in Resources */,
 				9C69D3892509903300143B3B /* GoogleService-Info.plist in Resources */,
 				9C5306CD25095EDD00CBFE32 /* Main.storyboard in Resources */,
 				9C5306E525095F1600CBFE32 /* DashboardViewController.xib in Resources */,
@@ -392,6 +407,7 @@
 				9CDDEC0F250D638400E1FB91 /* PeopleEntity.swift in Sources */,
 				9C5306C825095EDD00CBFE32 /* SceneDelegate.swift in Sources */,
 				9CDDEC03250D631300E1FB91 /* PeopleFactory.swift in Sources */,
+				9CBF374B250D7D6D00DF8996 /* PersonTableViewCell.swift in Sources */,
 				9C69D38D2509D0C800143B3B /* Entities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
