@@ -11,7 +11,7 @@ import FirebaseCore
 import FirebaseFirestore
 
 protocol DashboardServiceLogic: class {
-    func getDataFromAPI(_ completion: @escaping (Result<Person, ServiceError>) -> () )
+    func getDataFromAPI(_ completion: @escaping (Result<PersonEntity, ServiceError>) -> () )
 }
 
 class DashboardService: DashboardServiceLogic {
@@ -23,7 +23,7 @@ class DashboardService: DashboardServiceLogic {
         db = Firestore.firestore()
     }
 
-    func getDataFromAPI(_ completion: @escaping (Result<Person, ServiceError>) -> ()) {
+    func getDataFromAPI(_ completion: @escaping (Result<PersonEntity, ServiceError>) -> ()) {
         db.collection("people").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -32,7 +32,7 @@ class DashboardService: DashboardServiceLogic {
                 for document in querySnapshot!.documents {
                     let data = document.data()
                     if let fullname = data["fullName"] as? String, let age = data["age"] as? Int {
-                        let person = Person(fullName: fullname, age: age)
+                        let person = PersonEntity(fullName: fullname, age: age)
                         completion(.success(person))
                         return
                     }

@@ -25,6 +25,14 @@
 		9C69D38B2509AA1A00143B3B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */; };
 		9C69D38D2509D0C800143B3B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38C2509D0C800143B3B /* Entities.swift */; };
 		9C69D39F250AC8B200143B3B /* INXAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D39E250AC8B200143B3B /* INXAnalytics.swift */; };
+		9CDDEC03250D631300E1FB91 /* PeopleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFC250D631300E1FB91 /* PeopleFactory.swift */; };
+		9CDDEC04250D631300E1FB91 /* PeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFD250D631300E1FB91 /* PeoplePresenter.swift */; };
+		9CDDEC05250D631300E1FB91 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */; };
+		9CDDEC06250D631300E1FB91 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEBFF250D631300E1FB91 /* PeopleModel.swift */; };
+		9CDDEC07250D631300E1FB91 /* PeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDDEC00250D631300E1FB91 /* PeopleViewController.xib */; };
+		9CDDEC08250D631300E1FB91 /* PeopleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEC01250D631300E1FB91 /* PeopleAnalytics.swift */; };
+		9CDDEC09250D631300E1FB91 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEC02250D631300E1FB91 /* PeopleService.swift */; };
+		9CDDEC0F250D638400E1FB91 /* PeopleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDEC0E250D638400E1FB91 /* PeopleEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,14 @@
 		9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		9C69D38C2509D0C800143B3B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		9C69D39E250AC8B200143B3B /* INXAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INXAnalytics.swift; sourceTree = "<group>"; };
+		9CDDEBFC250D631300E1FB91 /* PeopleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleFactory.swift; sourceTree = "<group>"; };
+		9CDDEBFD250D631300E1FB91 /* PeoplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePresenter.swift; sourceTree = "<group>"; };
+		9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		9CDDEBFF250D631300E1FB91 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		9CDDEC00250D631300E1FB91 /* PeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleViewController.xib; sourceTree = "<group>"; };
+		9CDDEC01250D631300E1FB91 /* PeopleAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAnalytics.swift; sourceTree = "<group>"; };
+		9CDDEC02250D631300E1FB91 /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		9CDDEC0E250D638400E1FB91 /* PeopleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 		9C5306C425095EDC00CBFE32 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
+				9CDDEC0D250D637200E1FB91 /* Entities */,
 				9C5306EB25095F9300CBFE32 /* Core */,
 				9C5306D925095EEE00CBFE32 /* Feature */,
 				9C5306C525095EDD00CBFE32 /* AppDelegate.swift */,
@@ -111,6 +128,7 @@
 		9C5306D925095EEE00CBFE32 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				9CDDEBFB250D62F200E1FB91 /* People */,
 				9C69D39D250AC7FD00143B3B /* Dashboard */,
 			);
 			path = Feature;
@@ -162,6 +180,52 @@
 				9C5306EA25095F4300CBFE32 /* Views */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		9CDDEBFB250D62F200E1FB91 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				9CDDEBFC250D631300E1FB91 /* PeopleFactory.swift */,
+				9CDDEC0A250D632400E1FB91 /* Model */,
+				9CDDEC0B250D632A00E1FB91 /* Presenter */,
+				9CDDEC0C250D633000E1FB91 /* Views */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		9CDDEC0A250D632400E1FB91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CDDEBFF250D631300E1FB91 /* PeopleModel.swift */,
+				9CDDEC02250D631300E1FB91 /* PeopleService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CDDEC0B250D632A00E1FB91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9CDDEBFD250D631300E1FB91 /* PeoplePresenter.swift */,
+				9CDDEC01250D631300E1FB91 /* PeopleAnalytics.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9CDDEC0C250D633000E1FB91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CDDEBFE250D631300E1FB91 /* PeopleViewController.swift */,
+				9CDDEC00250D631300E1FB91 /* PeopleViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CDDEC0D250D637200E1FB91 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9CDDEC0E250D638400E1FB91 /* PeopleEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		C86011312FADAE4210E96587 /* Frameworks */ = {
@@ -234,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5306D225095EDE00CBFE32 /* LaunchScreen.storyboard in Resources */,
+				9CDDEC07250D631300E1FB91 /* PeopleViewController.xib in Resources */,
 				9C5306CF25095EDE00CBFE32 /* Assets.xcassets in Resources */,
 				9C69D3892509903300143B3B /* GoogleService-Info.plist in Resources */,
 				9C5306CD25095EDD00CBFE32 /* Main.storyboard in Resources */,
@@ -311,15 +376,22 @@
 			files = (
 				9C69D39F250AC8B200143B3B /* INXAnalytics.swift in Sources */,
 				9C5306E425095F1600CBFE32 /* DashboardModel.swift in Sources */,
+				9CDDEC06250D631300E1FB91 /* PeopleModel.swift in Sources */,
+				9CDDEC08250D631300E1FB91 /* PeopleAnalytics.swift in Sources */,
 				9C5306CA25095EDD00CBFE32 /* ViewController.swift in Sources */,
 				9C69D38B2509AA1A00143B3B /* UIViewController+Ext.swift in Sources */,
 				9C5306E325095F1600CBFE32 /* DashboardViewController.swift in Sources */,
+				9CDDEC05250D631300E1FB91 /* PeopleViewController.swift in Sources */,
+				9CDDEC09250D631300E1FB91 /* PeopleService.swift in Sources */,
 				9C5306E625095F1600CBFE32 /* DashboardAnalytics.swift in Sources */,
 				9C5306E725095F1600CBFE32 /* DashboardService.swift in Sources */,
 				9C5306E225095F1600CBFE32 /* DashboardPresenter.swift in Sources */,
 				9C5306E125095F1600CBFE32 /* DashboardFactory.swift in Sources */,
+				9CDDEC04250D631300E1FB91 /* PeoplePresenter.swift in Sources */,
 				9C5306C625095EDD00CBFE32 /* AppDelegate.swift in Sources */,
+				9CDDEC0F250D638400E1FB91 /* PeopleEntity.swift in Sources */,
 				9C5306C825095EDD00CBFE32 /* SceneDelegate.swift in Sources */,
+				9CDDEC03250D631300E1FB91 /* PeopleFactory.swift in Sources */,
 				9C69D38D2509D0C800143B3B /* Entities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

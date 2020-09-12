@@ -9,8 +9,8 @@
 import UIKit
 import FirebaseCrashlytics
 protocol DashboardViewLogic: class {
-    func loadData(_ person: Person)
-    func errorData(_ message: String)
+    func presentData(_ person: PersonEntity)
+    func errorMessage(_ message: String)
 }
 
 class DashboardViewController: UIViewController {
@@ -44,13 +44,13 @@ class DashboardViewController: UIViewController {
 }
 extension DashboardViewController: DashboardViewLogic {
 
-    func loadData(_ person: Person) {
+    func presentData(_ person: PersonEntity) {
         DispatchQueue.main.async {
             self.xName.text = person.fullName
         }
     }
 
-    func errorData(_ message: String) {
+    func errorMessage(_ message: String) {
         DispatchQueue.main.async {
             self.alertError(title: "Ups", message: message) {}
         }
