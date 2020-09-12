@@ -8,4 +8,6 @@ target 'demoapp' do
   # Pods for demoapp
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Performance'
 end

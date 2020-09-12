@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseCrashlytics
 protocol DashboardViewLogic: class {
     func loadData(_ person: Person)
     func errorData(_ message: String)

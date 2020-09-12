@@ -25,6 +25,7 @@ class DashboardPresenter: DashboardPresenterLogic {
 	}
     
     func getData() {
+        self.analytics.eventLoadVC()
         self.model.getData { [weak self] (result) in
             guard let self = self else {return}
 
@@ -33,8 +34,10 @@ class DashboardPresenter: DashboardPresenterLogic {
                 guard let person = self.model.person else {
                     return
                 }
+                self.analytics.eventLoadDataOK()
                 self.view?.loadData(person)
             case .failure(let err):
+                self.analytics.eventLoadDataError(err)
                 self.view?.errorData(err.message)
             }
         }

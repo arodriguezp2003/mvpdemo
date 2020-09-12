@@ -24,6 +24,7 @@
 		9C69D3892509903300143B3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C69D3882509903300143B3B /* GoogleService-Info.plist */; };
 		9C69D38B2509AA1A00143B3B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */; };
 		9C69D38D2509D0C800143B3B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D38C2509D0C800143B3B /* Entities.swift */; };
+		9C69D39F250AC8B200143B3B /* INXAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69D39E250AC8B200143B3B /* INXAnalytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9C69D3882509903300143B3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "demoapp/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		9C69D38C2509D0C800143B3B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		9C69D39E250AC8B200143B3B /* INXAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INXAnalytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +111,7 @@
 		9C5306D925095EEE00CBFE32 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				9C5306DA25095F1600CBFE32 /* DashboardFactory.swift */,
-				9C5306E825095F1F00CBFE32 /* Model */,
-				9C5306E925095F3500CBFE32 /* Presenter */,
-				9C5306EA25095F4300CBFE32 /* Views */,
+				9C69D39D250AC7FD00143B3B /* Dashboard */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -149,8 +148,20 @@
 			children = (
 				9C69D38A2509AA1A00143B3B /* UIViewController+Ext.swift */,
 				9C69D38C2509D0C800143B3B /* Entities.swift */,
+				9C69D39E250AC8B200143B3B /* INXAnalytics.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		9C69D39D250AC7FD00143B3B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				9C5306DA25095F1600CBFE32 /* DashboardFactory.swift */,
+				9C5306E825095F1F00CBFE32 /* Model */,
+				9C5306E925095F3500CBFE32 /* Presenter */,
+				9C5306EA25095F4300CBFE32 /* Views */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		C86011312FADAE4210E96587 /* Frameworks */ = {
@@ -173,6 +184,7 @@
 				9C5306BF25095EDC00CBFE32 /* Frameworks */,
 				9C5306C025095EDC00CBFE32 /* Resources */,
 				885E39736B317B559E957105 /* [CP] Embed Pods Frameworks */,
+				9CF5706A250ACF2F00ADD62B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,6 +283,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demoapp/Pods-demoapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9CF5706A250ACF2F00ADD62B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C69D39F250AC8B200143B3B /* INXAnalytics.swift in Sources */,
 				9C5306E425095F1600CBFE32 /* DashboardModel.swift in Sources */,
 				9C5306CA25095EDD00CBFE32 /* ViewController.swift in Sources */,
 				9C69D38B2509AA1A00143B3B /* UIViewController+Ext.swift in Sources */,
@@ -434,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = E49Y855GTY;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
