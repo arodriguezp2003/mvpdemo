@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
     @IBAction func didTapPeople(_ sender: Any) {
         let vc = PeopleFactory().getInitVC()
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
