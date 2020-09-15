@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="demoapp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="zMf-8c-oUi" id="Oov-WB-SUM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zMf-8c-oUi">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50t-rw-oWR">
+                    <rect key="frame" x="30" y="403" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.69019607839999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7gF-1j-H3D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="Dashboard">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapDashboard:" destination="-1" eventType="touchUpInside" id="dWN-Pf-L8C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQt-l9-iuR">
+                    <rect key="frame" x="30" y="463" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.69019607839999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YrC-EN-Q1K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="People">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapPeople:" destination="-1" eventType="touchUpInside" id="C9Q-4v-TCv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCJ-ui-rvQ">
+                    <rect key="frame" x="30" y="523" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.69019607839999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="y5g-r0-gi6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="logOut:" destination="-1" eventType="touchUpInside" id="NGA-vf-OVt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNX-7q-TRL">
+                    <rect key="frame" x="30" y="343" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.69019607839999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jk9-BH-FYB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <state key="normal" title="Onboarding">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOnboarding:" destination="-1" eventType="touchUpInside" id="i3s-ZW-XuX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="50t-rw-oWR" firstAttribute="top" secondItem="XNX-7q-TRL" secondAttribute="bottom" constant="10" id="3Ug-pL-xAL"/>
+                <constraint firstItem="WnS-rW-zcd" firstAttribute="trailing" secondItem="NCJ-ui-rvQ" secondAttribute="trailing" constant="30" id="8Hl-TS-QFC"/>
+                <constraint firstItem="FQt-l9-iuR" firstAttribute="leading" secondItem="WnS-rW-zcd" secondAttribute="leading" constant="30" id="AQT-SZ-qwx"/>
+                <constraint firstItem="FQt-l9-iuR" firstAttribute="centerY" secondItem="zMf-8c-oUi" secondAttribute="centerY" constant="40" id="AaI-FW-BRl"/>
+                <constraint firstItem="XNX-7q-TRL" firstAttribute="leading" secondItem="WnS-rW-zcd" secondAttribute="leading" constant="30" id="CdL-lw-2a0"/>
+                <constraint firstItem="50t-rw-oWR" firstAttribute="centerY" secondItem="zMf-8c-oUi" secondAttribute="centerY" constant="-20" id="LtK-j2-n30"/>
+                <constraint firstItem="50t-rw-oWR" firstAttribute="centerX" secondItem="zMf-8c-oUi" secondAttribute="centerX" id="OcR-XG-FQB"/>
+                <constraint firstItem="WnS-rW-zcd" firstAttribute="trailing" secondItem="FQt-l9-iuR" secondAttribute="trailing" constant="30" id="TjK-Z4-sGS"/>
+                <constraint firstItem="NCJ-ui-rvQ" firstAttribute="top" secondItem="FQt-l9-iuR" secondAttribute="bottom" constant="10" id="XQc-11-ZGR"/>
+                <constraint firstItem="FQt-l9-iuR" firstAttribute="centerX" secondItem="zMf-8c-oUi" secondAttribute="centerX" id="ebL-zI-y9O"/>
+                <constraint firstItem="WnS-rW-zcd" firstAttribute="trailing" secondItem="XNX-7q-TRL" secondAttribute="trailing" constant="30" id="fV2-i5-rNJ"/>
+                <constraint firstItem="WnS-rW-zcd" firstAttribute="trailing" secondItem="50t-rw-oWR" secondAttribute="trailing" constant="30" id="itp-VK-fHA"/>
+                <constraint firstItem="NCJ-ui-rvQ" firstAttribute="leading" secondItem="WnS-rW-zcd" secondAttribute="leading" constant="30" id="jsI-sG-tbu"/>
+                <constraint firstItem="50t-rw-oWR" firstAttribute="leading" secondItem="WnS-rW-zcd" secondAttribute="leading" constant="30" id="mP4-Wy-3Fe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="WnS-rW-zcd"/>
+            <point key="canvasLocation" x="261" y="86"/>
+        </view>
+    </objects>
+</document>
